@@ -1,2 +1,2 @@
-import './modules/gerando.js'
+import './modules/gerarNum.js'
 import './assets/css/style.css'

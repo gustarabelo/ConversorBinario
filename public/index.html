@@ -10,19 +10,9 @@
     <section class="container">
       <h1>Conversor números binários</h1>
       <form action="#">
-        <p>Qual tipo de conversão?</p>
-        <label for="B-D">Binário para decimal</label>
-        <input
-          type="radio"
-          name="check"
-          class="converter-type"
-          id="B-D"
-          checked
-        />
-        <label for="D-B">Decimal para binário</label>
-        <input type="radio" name="check" class="converter-type" id="D-B" />
-
-        <p>Digite o valor para ser convertido</p>
+        <label for="check">Decimal para binário: </label>
+        <input type="checkbox" name="check" class="converter-type" />
+        <p>Digite o valor para ser convertido:</p>
         <input type="number" id="num-input" />
         <div class="resultado"></div>
         <button>Converter</button>

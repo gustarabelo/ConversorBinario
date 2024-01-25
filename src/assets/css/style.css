@@ -40,12 +40,11 @@ form {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: start;
 }
 
 form p{
     width: 100%;
-    text-align: center;
 }
 
 form #num-input{
