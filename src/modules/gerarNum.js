@@ -11,12 +11,13 @@ function validarNum() {
 
 function converterNum(num) {
 
+    
     if (!converterDB.checked) {
-
+        
         for (let i in num) {
             if (num[i] < 0 || num[i] > 1) return gerarResultado('Valor inválido');
         }
-
+        
         const numDecimal = parseInt(num, 2);
         gerarResultado(`O valor decimal de ${num} é: ${numDecimal}`);
     }
@@ -26,7 +27,8 @@ function converterNum(num) {
             if (num[i] < 0) return gerarResultado('Valor inválido');
         }
 
-        num = Number(num)
+        
+        num = Number(num);
         const numBinario = num.toString(2)
         gerarResultado(`O valor binário de ${num} é: ${numBinario}`);
     }
