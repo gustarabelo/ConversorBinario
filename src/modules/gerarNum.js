@@ -20,6 +20,16 @@ function converterNum(num) {
         const numDecimal = parseInt(num, 2);
         gerarResultado(`O valor decimal de ${num} é: ${numDecimal}`);
     }
+    else{
+
+        for (let i in num) {
+            if (num[i] < 0) return gerarResultado('Valor inválido');
+        }
+
+        num = Number(num)
+        const numBinario = num.toString(2)
+        gerarResultado(`O valor binário de ${num} é: ${numBinario}`);
+    }
 }
 
 function gerarResultado(msg) {
